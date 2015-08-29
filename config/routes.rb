@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   namespace :api do
     resources :sessions, only: [:create]
+    resources :pets, except: [:new, :edit]
   end
 
   root to: 'api/pets#index'

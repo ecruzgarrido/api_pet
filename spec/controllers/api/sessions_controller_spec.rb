@@ -20,7 +20,7 @@ RSpec.describe Api::SessionsController, type: :controller do
         expect(response).to be_api_error
       end
 
-      it 'should be unauthenticated user' do
+      it 'throws unauthenticated errors' do
         expect(response_parsed_body['error']).not_to be_nil
         expect(response_parsed_body['error_description']).not_to be_nil
       end
@@ -41,7 +41,7 @@ RSpec.describe Api::SessionsController, type: :controller do
         expect(response).not_to be_api_error
       end
 
-      it 'should be unauthenticated user' do
+      it 'returns token and id user' do
         expect(response_parsed_body['response']['user_id']).to eq(user.id)
         expect(response_parsed_body['response']['token']).to eq(user.reload.authentication_token)
       end
