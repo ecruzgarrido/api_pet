@@ -1,0 +1,15 @@
+en:
+  errors: &errors
+    format: ! "%{attribute} %{message}"
+    messages:
+      blank: It cannot be left blank
+      empty: It cannot be left empty
+      exclusion: It is reserved
+      inclusion: It is not included in the list
+  activerecord:
+    errors:
+      <<: *errors
+      models:
+        battle:
+          different_owners: 'The pets of the battle belongs to different owners.'
+          battle_for_day: 'Pets can only fight once a day.'

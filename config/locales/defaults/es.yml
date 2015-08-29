@@ -1,0 +1,15 @@
+es:
+  errors: &errors
+    format: ! '%{attribute} %{message}'
+    messages:
+      blank: No puede estar en blanco
+      empty: No puede estar vacío
+      exclusion: Está reservado
+      inclusion: No está incluido en la lista
+  activerecord:
+    errors:
+      <<: *errors
+      models:
+        battle:
+          different_owners: 'Las mascotas del combate deben pertenecer a diferentes miembros.'
+          battle_for_day: 'Las mascotas sólo pueden pelear una vez al día.'
