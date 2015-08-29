@@ -1,4 +1,5 @@
 class Pet < ActiveRecord::Base
+  include RocketPants::Cacheable
 
   validates_presence_of :name, :birthdate, :user, :sex, :pet_type
 
