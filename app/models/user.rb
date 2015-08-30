@@ -1,8 +1,8 @@
 class User < ActiveRecord::Base
   include SecureTools
 
-  devise :database_authenticatable, :confirmable, :trackable,
-         :registerable , :validatable
+  devise :database_authenticatable, :trackable,
+         :validatable
 
   validates_presence_of :name
 

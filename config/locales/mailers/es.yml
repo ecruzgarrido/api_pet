@@ -1,0 +1,10 @@
+es:
+  mailers:
+    cheers: 'Buenas %{name},'
+    users:
+      welcome:
+        subject: '¡Bienvenido!'
+        introduction: 'Tus datos de usuario son los siguientes:'
+        name: 'Nombre:'
+        email: 'Email:'
+        goodbye: 'Disfruta nuestra web.'
