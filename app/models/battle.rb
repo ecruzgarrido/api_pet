@@ -41,7 +41,10 @@ class Battle < ActiveRecord::Base
     end
 
     def different_owners
-      errors.add(:base, I18n.t('activerecord.errors.models.battle.different_owners')) if same_owner
+      if same_owner
+        errors.add(:first_fighter_id, I18n.t('activerecord.errors.models.battle.different_owners'))
+        errors.add(:second_fighter_id, I18n.t('activerecord.errors.models.battle.different_owners'))
+      end
     end
 
   private

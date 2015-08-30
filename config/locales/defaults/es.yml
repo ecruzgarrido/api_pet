@@ -7,6 +7,62 @@ es:
       exclusion: Está reservado
       inclusion: No está incluido en la lista
       taken: Está repetido
+  date:
+    abbr_day_names:
+    - Dom
+    - Lun
+    - Mar
+    - Mié
+    - Jue
+    - Vie
+    - Sáb
+    abbr_month_names:
+    -
+    - Ene
+    - Feb
+    - Mar
+    - Abr
+    - May
+    - Jun
+    - Jul
+    - Ago
+    - Sep
+    - Oct
+    - Nov
+    - Dic
+    day_names:
+    - Domingo
+    - Lunes
+    - Martes
+    - Miércoles
+    - Jueves
+    - Viernes
+    - Sábado
+    formats:
+      default: ! '%d/%m/%Y'
+      long: ! '%d de %B de %Y'
+      short: ! '%d de %b'
+      article: ! "%d de %B"
+      library: ! '%d %b %Y'
+      active_at: ! '%b. %Y'
+    month_names:
+    -
+    - Enero
+    - Febrero
+    - Marzo
+    - Abril
+    - Mayo
+    - Junio
+    - Julio
+    - Agosto
+    - Septiembre
+    - Octubre
+    - Noviembre
+    - Diciembre
+    order:
+    - :day
+    - :month
+    - :year
   time:
     am: am
     formats:
