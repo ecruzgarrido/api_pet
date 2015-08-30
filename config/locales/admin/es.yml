@@ -1,0 +1,3 @@
+es:
+  forms:
+    title: "Detalles %{model_name}"

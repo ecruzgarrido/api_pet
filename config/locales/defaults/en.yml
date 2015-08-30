@@ -77,3 +77,43 @@ en:
         battle:
           different_owners: 'The pets of the battle belongs to different owners.'
           battle_for_day: 'Pets can only fight once a day.'
+    attributes:
+      user:
+        name: 'Name'
+        email: 'Email'
+        password: 'Password'
+        password_confirmation: 'Repeat password'
+        authentication_token: 'Authentication token'
+        created_at: 'Creation date'
+        updated_at: 'Update date'
+      admin:
+        email: 'Email'
+        password: 'Password'
+        password_confirmation: 'Repeat password'
+        created_at: 'Creation date'
+        updated_at: 'Update date'
+      sex:
+        code: 'Code'
+        name: 'Name'
+        created_at: 'Creation date'
+        updated_at: 'Update date'
+      pet_type:
+        code: 'Code'
+        name: 'Name'
+        created_at: 'Creation date'
+        updated_at: 'Update date'
+      pet:
+        name: 'Name'
+        birthdate: 'Birthdate'
+        user: 'Member'
+        sex: 'Sex'
+        pet_type: 'Type'
+        created_at: 'Creation date'
+        updated_at: 'Update date'
+      battle:
+        start: 'Start date and time'
+        first_fighter: 'First fighter'
+        second_fighter: 'Second fighter'
+        winner: 'Winner'
+        created_at: 'Creation date'
+        updated_at: 'Update date'

@@ -14,7 +14,7 @@ ActiveAdmin.register Admin do
   filter :created_at
 
   form do |f|
-    f.inputs "Admin Details" do
+    f.inputs form_title('Admin') do
       f.input :email
       f.input :password
       f.input :password_confirmation

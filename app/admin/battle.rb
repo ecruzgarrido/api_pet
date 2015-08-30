@@ -19,7 +19,7 @@ ActiveAdmin.register Battle do
   filter :winner
 
   form do |f|
-    f.inputs "Battle Details" do
+    f.inputs form_title('Battle') do
       f.input :start, as: :datetime_picker, local: true
       f.input :first_fighter
       f.input :second_fighter
