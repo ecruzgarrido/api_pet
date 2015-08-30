@@ -47,7 +47,8 @@ RSpec.describe Battle, type: :model do
 
     it 'should not be valid the battle' do
       expect(battle).not_to be_valid
-      expect(battle.errors[:base]).not_to be_empty
+      expect(battle.errors[:first_fighter_id]).not_to be_empty
+      expect(battle.errors[:second_fighter_id]).not_to be_empty
     end
 
   end
