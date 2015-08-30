@@ -6,6 +6,13 @@ en:
       empty: It cannot be left empty
       exclusion: It is reserved
       inclusion: It is not included in the list
+  time:
+    am: am
+    formats:
+      default: ! "%A, %d %B %Y %H:%M:%S %z"
+      long: ! "%d %B %Y %H:%M"
+      short: ! "%d %b %H:%M"
+    pm: pm
   activerecord:
     errors:
       <<: *errors

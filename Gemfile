@@ -22,6 +22,8 @@ gem 'devise', '3.5.2'
 
 gem 'will_paginate', '3.0.7'
 
+gem 'activeadmin', '~> 1.0.0.pre1'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

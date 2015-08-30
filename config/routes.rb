@@ -7,5 +7,8 @@ Rails.application.routes.draw do
     resources :pets, except: [:new, :edit]
   end
 
+  devise_for :admins, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
+
   root to: 'api/pets#index'
 end
