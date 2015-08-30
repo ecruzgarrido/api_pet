@@ -165,8 +165,8 @@ RSpec.describe Api::PetsController, type: :controller do
         end
 
         it 'returns pet with authenticated user' do
-          expect(response_parsed_body['response']['user_id']).not_to eq(another_user.id)
-          expect(response_parsed_body['response']['user_id']).to eq(user.id)
+          expect(response_parsed_body['response']['user']['name']).not_to eq(another_user.name)
+          expect(response_parsed_body['response']['user']['name']).to eq(user.name)
         end
       end
 
@@ -189,7 +189,7 @@ RSpec.describe Api::PetsController, type: :controller do
         end
 
         it 'returns pet with authenticated user' do
-          expect(response_parsed_body['response']['user_id']).to eq(user.id)
+          expect(response_parsed_body['response']['user']['name']).to eq(user.name)
         end
       end
 
