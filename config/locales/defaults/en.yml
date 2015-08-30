@@ -6,6 +6,7 @@ en:
       empty: It cannot be left empty
       exclusion: It is reserved
       inclusion: It is not included in the list
+      taken: It is repeated
   time:
     am: am
     formats:

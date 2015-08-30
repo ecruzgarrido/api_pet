@@ -1,0 +1,8 @@
+<h1><%= I18n.t('mailers.cheers', name: @user.name) %></h1>
+<p></p>
+<p><%= I18n.t('mailers.users.welcome.introduction') %></p>
+<ul>
+  <li><%= I18n.t('mailers.users.welcome.name') %> <%= @user.name %></li>
+  <li><%= I18n.t('mailers.users.welcome.email') %> <%= @user.email %></li>
+</ul>
+<p><%= I18n.t('mailers.users.welcome.goodbye') %></p>

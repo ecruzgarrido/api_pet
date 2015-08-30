@@ -6,6 +6,7 @@ es:
       empty: No puede estar vacío
       exclusion: Está reservado
       inclusion: No está incluido en la lista
+      taken: Está repetido
   time:
     am: am
     formats:
