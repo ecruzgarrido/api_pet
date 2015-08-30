@@ -7,6 +7,62 @@ en:
       exclusion: It is reserved
       inclusion: It is not included in the list
       taken: It is repeated
+  date:
+    abbr_day_names:
+    - Sun
+    - Mon
+    - Tue
+    - Wed
+    - Thu
+    - Fri
+    - Sat
+    abbr_month_names:
+    -
+    - Jan
+    - Feb
+    - Mar
+    - Apr
+    - May
+    - Jun
+    - Jul
+    - Aug
+    - Sep
+    - Oct
+    - Nov
+    - Dec
+    day_names:
+    - Sunday
+    - Monday
+    - Tuesday
+    - Wednesday
+    - Thursday
+    - Friday
+    - Saturday
+    formats:
+      default: ! "%d/%m/%Y"
+      long: ! "%d %B %Y"
+      short: ! "%d %b"
+      article: ! "%d %B"
+      library: ! '%d %b %Y'
+      active_at: ! '%b. %Y'
+    month_names:
+    -
+    - January
+    - February
+    - March
+    - April
+    - May
+    - June
+    - July
+    - August
+    - September
+    - October
+    - November
+    - December
+    order:
+    - :day
+    - :month
+    - :year
   time:
     am: am
     formats:
