@@ -77,3 +77,43 @@ es:
         battle:
           different_owners: 'Las mascotas del combate deben pertenecer a diferentes miembros.'
           battle_for_day: 'Las mascotas sólo pueden pelear una vez al día.'
+    attributes:
+      user:
+        name: 'Nombre'
+        email: 'Email'
+        password: 'Password'
+        password_confirmation: 'Repita el password'
+        authentication_token: 'Token de autenticación'
+        created_at: 'Fecha de creación'
+        updated_at: 'Fecha de actualización'
+      admin:
+        email: 'Email'
+        password: 'Password'
+        password_confirmation: 'Repita el password'
+        created_at: 'Fecha de creación'
+        updated_at: 'Fecha de actualización'
+      sex:
+        code: 'Código'
+        name: 'Nombre'
+        created_at: 'Fecha de creación'
+        updated_at: 'Fecha de actualización'
+      pet_type:
+        code: 'Código'
+        name: 'Nombre'
+        created_at: 'Fecha de creación'
+        updated_at: 'Fecha de actualización'
+      pet:
+        name: 'Nombre'
+        birthdate: 'Fecha de nacimiento'
+        user: 'Miembro'
+        sex: 'Sexo'
+        pet_type: 'Tipo'
+        created_at: 'Fecha de creación'
+        updated_at: 'Fecha de actualización'
+      battle:
+        start: 'Fecha y hora comienzo'
+        first_fighter: 'Primer luchador'
+        second_fighter: 'Segundo luchador'
+        winner: 'Ganador'
+        created_at: 'Fecha de creación'
+        updated_at: 'Fecha de actualización'

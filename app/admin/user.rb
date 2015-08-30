@@ -33,7 +33,7 @@ ActiveAdmin.register User do
   filter :created_at
 
   form do |f|
-    f.inputs "User Details" do
+    f.inputs form_title('User') do
       f.input :name
       f.input :email
       f.input :password
