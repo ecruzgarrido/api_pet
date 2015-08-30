@@ -6,6 +6,70 @@ en:
       empty: It cannot be left empty
       exclusion: It is reserved
       inclusion: It is not included in the list
+      taken: It is repeated
+  date:
+    abbr_day_names:
+    - Sun
+    - Mon
+    - Tue
+    - Wed
+    - Thu
+    - Fri
+    - Sat
+    abbr_month_names:
+    -
+    - Jan
+    - Feb
+    - Mar
+    - Apr
+    - May
+    - Jun
+    - Jul
+    - Aug
+    - Sep
+    - Oct
+    - Nov
+    - Dec
+    day_names:
+    - Sunday
+    - Monday
+    - Tuesday
+    - Wednesday
+    - Thursday
+    - Friday
+    - Saturday
+    formats:
+      default: ! "%d/%m/%Y"
+      long: ! "%d %B %Y"
+      short: ! "%d %b"
+      article: ! "%d %B"
+      library: ! '%d %b %Y'
+      active_at: ! '%b. %Y'
+    month_names:
+    -
+    - January
+    - February
+    - March
+    - April
+    - May
+    - June
+    - July
+    - August
+    - September
+    - October
+    - November
+    - December
+    order:
+    - :day
+    - :month
+    - :year
+  time:
+    am: am
+    formats:
+      default: ! "%A, %d %B %Y %H:%M:%S %z"
+      long: ! "%d %B %Y %H:%M"
+      short: ! "%d %b %H:%M"
+    pm: pm
   activerecord:
     errors:
       <<: *errors
@@ -13,3 +77,43 @@ en:
         battle:
           different_owners: 'The pets of the battle belongs to different owners.'
           battle_for_day: 'Pets can only fight once a day.'
+    attributes:
+      user:
+        name: 'Name'
+        email: 'Email'
+        password: 'Password'
+        password_confirmation: 'Repeat password'
+        authentication_token: 'Authentication token'
+        created_at: 'Creation date'
+        updated_at: 'Update date'
+      admin:
+        email: 'Email'
+        password: 'Password'
+        password_confirmation: 'Repeat password'
+        created_at: 'Creation date'
+        updated_at: 'Update date'
+      sex:
+        code: 'Code'
+        name: 'Name'
+        created_at: 'Creation date'
+        updated_at: 'Update date'
+      pet_type:
+        code: 'Code'
+        name: 'Name'
+        created_at: 'Creation date'
+        updated_at: 'Update date'
+      pet:
+        name: 'Name'
+        birthdate: 'Birthdate'
+        user: 'Member'
+        sex: 'Sex'
+        pet_type: 'Type'
+        created_at: 'Creation date'
+        updated_at: 'Update date'
+      battle:
+        start: 'Start date and time'
+        first_fighter: 'First fighter'
+        second_fighter: 'Second fighter'
+        winner: 'Winner'
+        created_at: 'Creation date'
+        updated_at: 'Update date'

@@ -16,6 +16,14 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'responders', '2.1.0'
 
+gem 'rocket_pants', '1.13.0'
+
+gem 'devise', '3.5.2'
+
+gem 'will_paginate', '3.0.7'
+
+gem 'activeadmin', '~> 1.0.0.pre1'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

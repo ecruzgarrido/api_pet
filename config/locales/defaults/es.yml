@@ -6,6 +6,70 @@ es:
       empty: No puede estar vacío
       exclusion: Está reservado
       inclusion: No está incluido en la lista
+      taken: Está repetido
+  date:
+    abbr_day_names:
+    - Dom
+    - Lun
+    - Mar
+    - Mié
+    - Jue
+    - Vie
+    - Sáb
+    abbr_month_names:
+    -
+    - Ene
+    - Feb
+    - Mar
+    - Abr
+    - May
+    - Jun
+    - Jul
+    - Ago
+    - Sep
+    - Oct
+    - Nov
+    - Dic
+    day_names:
+    - Domingo
+    - Lunes
+    - Martes
+    - Miércoles
+    - Jueves
+    - Viernes
+    - Sábado
+    formats:
+      default: ! '%d/%m/%Y'
+      long: ! '%d de %B de %Y'
+      short: ! '%d de %b'
+      article: ! "%d de %B"
+      library: ! '%d %b %Y'
+      active_at: ! '%b. %Y'
+    month_names:
+    -
+    - Enero
+    - Febrero
+    - Marzo
+    - Abril
+    - Mayo
+    - Junio
+    - Julio
+    - Agosto
+    - Septiembre
+    - Octubre
+    - Noviembre
+    - Diciembre
+    order:
+    - :day
+    - :month
+    - :year
+  time:
+    am: am
+    formats:
+      default: ! '%A, %d de %B de %Y %H:%M:%S %z'
+      long: ! '%d de %B de %Y %H:%M'
+      short: ! '%d de %b %H:%M'
+    pm: pm
   activerecord:
     errors:
       <<: *errors
@@ -13,3 +77,43 @@ es:
         battle:
           different_owners: 'Las mascotas del combate deben pertenecer a diferentes miembros.'
           battle_for_day: 'Las mascotas sólo pueden pelear una vez al día.'
+    attributes:
+      user:
+        name: 'Nombre'
+        email: 'Email'
+        password: 'Password'
+        password_confirmation: 'Repita el password'
+        authentication_token: 'Token de autenticación'
+        created_at: 'Fecha de creación'
+        updated_at: 'Fecha de actualización'
+      admin:
+        email: 'Email'
+        password: 'Password'
+        password_confirmation: 'Repita el password'
+        created_at: 'Fecha de creación'
+        updated_at: 'Fecha de actualización'
+      sex:
+        code: 'Código'
+        name: 'Nombre'
+        created_at: 'Fecha de creación'
+        updated_at: 'Fecha de actualización'
+      pet_type:
+        code: 'Código'
+        name: 'Nombre'
+        created_at: 'Fecha de creación'
+        updated_at: 'Fecha de actualización'
+      pet:
+        name: 'Nombre'
+        birthdate: 'Fecha de nacimiento'
+        user: 'Miembro'
+        sex: 'Sexo'
+        pet_type: 'Tipo'
+        created_at: 'Fecha de creación'
+        updated_at: 'Fecha de actualización'
+      battle:
+        start: 'Fecha y hora comienzo'
+        first_fighter: 'Primer luchador'
+        second_fighter: 'Segundo luchador'
+        winner: 'Ganador'
+        created_at: 'Fecha de creación'
+        updated_at: 'Fecha de actualización'
