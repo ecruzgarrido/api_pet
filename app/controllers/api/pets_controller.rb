@@ -1,5 +1,17 @@
 class Api::PetsController < Api::BaseController
 
+  class Pet < ::Pet
+    def serializable_hash(options = {})
+      super only: [:name],
+            methods: [:years, :ratio_win],
+            include: {
+                user: {only: :name},
+                sex: {only: :name},
+                pet_type: {only: :name}
+      }
+    end
+  end
+
   before_filter :require_owner_pet!, only: [:update, :destroy]
   #Set current_user to pet
   before_filter :set_user_id, only: [:create, :update]
