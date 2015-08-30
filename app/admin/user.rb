@@ -3,6 +3,8 @@ ActiveAdmin.register User do
   permit_params :name, :email, :password, :password_confirmation
 
   controller do
+    # Overwrite create action because it sends an email
+    # to created user
     def create
       create! do |success, failure|
         success.html do

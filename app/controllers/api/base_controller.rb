@@ -1,4 +1,5 @@
 #http://blog.tanookilabs.com/post/95919505408/building-an-api-for-a-mobile-client-with-rails
+#Inherited RocketPants for API
 class Api::BaseController < RocketPants::Base
 
   before_filter :authenticate_user_from_token

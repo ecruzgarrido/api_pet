@@ -1,5 +1,6 @@
 class Api::PetsController < Api::BaseController
 
+  #Serialize pet attributes response
   class Pet < ::Pet
     def serializable_hash(options = {})
       super only: [:name],

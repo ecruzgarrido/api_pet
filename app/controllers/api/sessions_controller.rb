@@ -4,6 +4,8 @@ class Api::SessionsController < Api::BaseController
   #Skip authentication
   skip_before_filter :require_authentication!
 
+  #Authentication user with email and password params
+  #Returns authentication token
   def create
     user = User.find_for_authentication(email: user_params[:email])
 
